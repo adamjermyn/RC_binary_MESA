@@ -15,7 +15,7 @@ echo "Done compiling."
 echo "Starting runs."
 mkdir runs
 
-for j in 1.0 1.2 1.4 1.6 1.8 2.0
+for j in 0.8 0.9 1.0 1.125 1.25 1.375 1.5 1.75 2 2.25 2.5
 do
     rm -r runs/$j
     cp -R template runs/$j    
