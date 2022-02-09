@@ -37,7 +37,7 @@
       history_interval = 1
 
       ! WHEN TO STOP
-      stop_at_phase_TACHeB = .true.
+      stop_at_phase_ZACHeB = .true.
 
       ! RESOLUTION
       mesh_delta_coeff = 1.0
