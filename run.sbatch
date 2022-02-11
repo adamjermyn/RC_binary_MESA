@@ -2,7 +2,7 @@
 #SBATCH --mail-type=ALL --mail-user=ajermyn@flatironinstitute.org
 #SBATCH -n 1
 #SBATCH --partition=cca
-#SBATCH --time=20:00:00
+#SBATCH --time=23:59:00
 
 export MESASDK_ROOT="/mnt/home/ajermyn/Software/MESA/mesasdk"
 source $MESASDK_ROOT/bin/mesasdk_init.sh
@@ -16,7 +16,7 @@ mkdir $CURRENT_NAME
 cd $CURRENT_NAME
 mv $CURRENT_DIR/* ./
 
-./run_grid.sh
+timeout 23hr ./run_grid.sh >> slurm.out
 
 
 cd ..
