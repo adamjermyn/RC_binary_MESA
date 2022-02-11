@@ -16,7 +16,7 @@ mkdir $CURRENT_NAME
 cd $CURRENT_NAME
 mv $CURRENT_DIR/* ./
 
-timeout 23hr ./run_grid.sh >> slurm.out
+timeout 23h ./run_grid.sh >> slurm.out
 
 
 cd ..
